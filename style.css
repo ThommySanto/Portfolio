@@ -232,11 +232,24 @@ h1 span,
   font-size: 0.68rem;
 }
 
-.project-link {
+.project-links {
   margin-top: auto;
   padding-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-links .project-link {
+  margin-top: 0;
+  padding-top: 0;
   color: var(--accent);
   font-weight: 700;
+}
+
+.link-divider {
+  color: var(--muted);
+  opacity: 0.5;
 }
 
 .disabled {
@@ -316,8 +329,13 @@ footer {
   }
 
   .hero-buttons,
-  .contact-links {
+  .contact-links,
+  .project-links {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .link-divider {
+    display: none;
   }
 }
